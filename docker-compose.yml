@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=<MONGO_URI>
+      - ORIGIN1=http://localhost:5173
+      - FULL_NAME=ABHISHEK_ORAON
+      - REDIS_USERNAME=default
+      - REDIS_PASSWORD=<REDIS_PASSWORD>
+      - REDIS_URL=<REDIS_URL>
+      - REDIS_PORT=<REDIS_PORT>
+    command: npm start
+    networks:
+      - app-network
+    depends_on:
+      - client
+
+  client:
+    build: ./client
+    ports:
+      - "5173:4173"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
