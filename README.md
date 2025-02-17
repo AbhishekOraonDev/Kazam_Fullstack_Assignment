@@ -1,6 +1,6 @@
-# Task Management System
+# Todo Management System
 
-This is a **Task Management System** designed to provide an efficient way to manage tasks and notes with real-time updates. The system includes both a **frontend (React.js)** and a **backend (Node.js, Express, MongoDB, Redis, and Socket.io)** for seamless user experience.
+This is a **Todo Management System** designed to provide an efficient way to manage tasks and notes with real-time updates. The system includes both a **frontend (React.js)** and a **backend (Node.js, Express, MongoDB, Redis, and Socket.io)** for seamless user experience.
 
 ## Table of Contents
 
