@@ -1,50 +1,131 @@
-# React + TypeScript + Vite
+# Todo Management Frontend (Kazam Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend service for the Todo Management System, providing a user-friendly interface to manage tasks efficiently. The frontend is built using React.js with modern UI libraries.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
-## Expanding the ESLint configuration
+- [Project Features](#features)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Future Enhancements](#future-enhancements)
+- [Additional Features implementetion](#additional-features-implementetion)
+- [Contact](#contact)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Features
+- Task creation
+- Responsive UI for better user experience.
+- Cached data for fast fetching 
+
+## Technologies Used
+
+- **React.js**: Frontend framework.
+- **Axios**: API requests.
+- **framer-motion**: UI motion effects.
+- **socket.io-client**: Socket implementation for real time.
+- **tailwind** - UI library used.
+- **react-toastify** - Notification handler.
+
+
+## Folder Structure
+
+```bash
+├── assets/                     # Handles user assets
+├── component/
+│   ├── AddNote.tsx              # Add note component
+│   ├── NoteItem.tsx             # Note items component (Not using)
+│   ├── NoteList.tsx             # Note list
+├── lib/
+│   ├──utils.ts                 # tailwind utils
+├── page/
+│   ├── NotePage.tsx            # Note page
+├── services/
+│   ├── taskService.tsx         # Socket and API services
+├── ui/
+├── utils/
+│   ├── socket.ts               # handles socket
+├── .env                        # Environment variables
+├── App.tsx                     # App logic 
+├── App.css                     # App css styles
+├── index.css                   # Index css file
+├── main.tsx                    # project main file
+└── package.json                # Dependencies and scripts
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
+## Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/AbhishekOraonDev/TaskManagement_Frontend.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```sh
+   cd <folder_name_if_exists> 
+   ```
+
+3. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+4. **Create a `.env` file and add environment variables:**
+   ```env
+      VITE_BASE_URL=<YOUR_SERVER_URL>
+   ```
+
+5. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+
+
+## How to Use
+
+1. Create new tasks by clicking the Add button
+
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+
+2. Create a new branch (`git checkout -b feature-branch`)
+
+3. Commit your changes (`git commit -m "Add new feature"`)
+
+4. Push to the branch (`git push origin feature-branch`)
+
+5. Open a Pull Request
+
+
+## Future Enhancements
+
+1. Implement user authentication.
+
+2. Implement of role-based access control (RBAC) for admin-level operations.
+
+3. Add different notes operation.
+
+4. Assign task/notes to multiple users.
+
+
+ 
+
+## Contact
+For any queries or issues, reach out to **[Abhishek Oraon](https://github.com/AbhishekOraonDev)**.
+
+---
+**Happy Coding! 🚀**
+
+
+
