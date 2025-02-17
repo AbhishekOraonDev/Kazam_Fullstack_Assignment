@@ -66,7 +66,7 @@ This is the backend service for the **Todo Management System**, designed to hand
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/AbhishekOraonDev/TaskManagement_Backend.git
+   git clone https://github.com/AbhishekOraonDev/Kazam_Fullstack_Assignment.git
    ```
 
 2. **Navigate to the project directory:**
