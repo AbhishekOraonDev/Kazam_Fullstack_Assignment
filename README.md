@@ -111,7 +111,7 @@ Client (React.js) ↔ Server (Node.js & Express.js) ↔ MongoDB (Database)
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/AbhishekOraonDev/Kazam_Fullstack_Assignment.git
+   git clone https://github.com/AbhishekOraonDev/fullstack_task_abhishek.git
    ```
 2. **Navigate to the project directory:**
    ```sh
@@ -134,7 +134,7 @@ Client (React.js) ↔ Server (Node.js & Express.js) ↔ MongoDB (Database)
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/AbhishekOraonDev/Kazam_Fullstack_Assignment.git
+   git clone https://github.com/AbhishekOraonDev/fullstack_task_abhishek.git
    ```
 2. **Navigate to the project directory:**
    ```sh
