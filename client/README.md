@@ -64,7 +64,7 @@ This is the frontend service for the Todo Management System, providing a user-fr
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/AbhishekOraonDev/TaskManagement_Frontend.git
+   git clone https://github.com/AbhishekOraonDev/fullstack_task_abhishek.git
    ```
 
 2. **Navigate to the project directory:**
